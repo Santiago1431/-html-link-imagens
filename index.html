@@ -6,9 +6,10 @@ Uma pequeno ALERTA para você que está baixando o projeto e não assistiu o ví
 	<head>
 		<title>Nike - Página principal</title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="CSS/estilo.css">
 	</head>
 
-	<body background="imagens/fundo.png">
+	<body >
 
 		<table border="0" width="900" align="center">
 			
@@ -23,7 +24,47 @@ Uma pequeno ALERTA para você que está baixando o projeto e não assistiu o ví
 
 			<tr>
 				<td colspan="2">
-					<img src="imagens/capa.png" width="100%">
+					<div id="slider">
+						<input type="radio" name="slider" id="slide1" checked>
+						<input type="radio" name="slider" id="slide2">
+						<input type="radio" name="slider" id="slide3">
+						<div id="slides">
+							<div class="overflow">
+								<div class="inner">
+									<div class="slide slide_1">
+										<div class="slide-content">
+											<h2>Slide 1</h2>
+											<p>Conteudo slide</p>
+										</div>
+									</div>
+									<div class="slide slide_2">
+										<div class="slide-content">
+											<h2>Slide 2</h2>
+											<p>Conteudo slide2</p>
+										</div>
+									</div>
+									<div class="slide slide_3">
+										<div class="slide-content">
+											<h2>Slide 3</h2>
+											<p>Conteudo slide3</p>
+										</div>
+									</div>
+								</div>						
+							</div>
+						</div>
+							<div id="controls">
+								<label for="slide1"></label>
+								<label for="slide2"></label>
+								<label for="slide3"></label>
+							</div>
+							<div class="bullets">
+								<label for="slide1"></label>
+								<label for="slide2"></label>
+								<label for="slide3"></label>
+							</div>
+						</div>
+						<img src="imagens/capa.png" width="100%">
+					</div>	
 				</td>
 			</tr>
 
